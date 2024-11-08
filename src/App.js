@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+import AllRouter from "./components/AllRoute/index";
 import './App.css';
 
 function App() {
   return (
     <>
-      <h2>Hello World!!!</h2>
+      <AllRouter />
     </>
   );
 }
