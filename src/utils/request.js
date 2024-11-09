@@ -5,7 +5,7 @@ export const get = async (api) => {
     return result;
 }
 
-export const create = async (api, data) => {
+export const post = async (api, data) => {
     const response = await fetch(api, {
         method: "POST",
         headers: {
