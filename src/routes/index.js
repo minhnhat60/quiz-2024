@@ -46,7 +46,7 @@ export const routes = [
                         element: <Answers />
                     },
                     {
-                        path: "result",
+                        path: "result/:id",
                         element: <Result />
                     },
                 ]
