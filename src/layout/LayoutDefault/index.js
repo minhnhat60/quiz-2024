@@ -8,8 +8,6 @@ const LayoutDefault = () => {
 
     const token = getCookie("token");
 
-    console.log(token);
-
     return (
         <>
             <header className='header'>
