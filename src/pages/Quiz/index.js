@@ -42,12 +42,12 @@ const Quiz = () => {
                 data.answers.push(
                     {
                         questionId: parseInt(name),
-                        answers: parseInt(value)
+                        answer: parseInt(value)
                     }
                 );
-
             }
         }
+
         const result = await createAnswer(data);
 
         navigate(`/result/${result.id}`)
@@ -68,7 +68,7 @@ const Quiz = () => {
 
                                 {item.answers.map((answer, indexAnswer) => (
                                     <div key={indexAnswer}>
-                                        <input name={item.id} type="radio" value={indexAnswer}
+                                        <input required name={item.id} type="radio" value={indexAnswer}
                                         id={`quiz-${item.id}-${indexAnswer}`} />
                                         <label htmlFor={`quiz-${item.id}-${indexAnswer}`}>{answer}</label>
                                     </div>                                    

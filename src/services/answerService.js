@@ -11,3 +11,9 @@ export const getListAnswerById = async (id) => {
 
     return result
 };
+
+export const getListAnswerByUserId = async (userId) => {
+    const result = await get(`http://localhost:3002/answers?userId=${userId}`);
+
+    return result
+};
